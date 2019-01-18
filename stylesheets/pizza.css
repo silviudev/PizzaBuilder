@@ -1,0 +1,141 @@
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+body{
+	background-color: black;
+	overflow: auto;
+	color: white;
+}
+
+h1{
+	font-size: 2.5em;
+	text-align:center;
+	text-decoration: underline;
+}
+
+h4{
+	font-size: 1.5em;
+	margin-bottom: -1%;
+}
+
+h6{
+	font-size: 1.2em;
+	margin-bottom: -1%;
+	margin-top: -0.5%;
+}
+
+nav{
+	background-color: white;
+	height: 50px;
+	margin-bottom: -1%;
+	text-align: center;
+	border: 6px dotted gray;
+}
+
+nav a{
+	background-color: red;
+	width: 23%;
+	height: 50px;
+	font-size: 1.5em; 
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid black;
+	color: black;
+}
+
+nav a:hover{
+	background-color: darkred;
+	color: red;
+}
+
+#myCanvas{
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+	display: block;
+	border: 5px dotted gray;
+}
+
+#pizza_figure{
+	margin: 0 auto;
+	width: 49%;
+	float:left;
+	display:inline-block;
+}
+
+#options{
+	margin: 0 auto;
+	width: 49%;
+	float:right;
+}
+
+form{
+	margin-bottom: 3%;
+}
+
+form input{
+	display: block;
+}
+
+input[type=checkbox] {
+	transform: scale(1.5);
+	display:inline-block;
+	margin-left: 1%;
+}
+
+input[type=radio] {
+	transform: scale(1.5);
+	display:inline-block;
+	margin-left: 1%;
+}
+
+
+form label{
+	font-size: 2em;
+	display:block;
+}
+
+#price{
+	font-size: 2em;
+	text-align: center;
+}
+
+#submit{
+	width: 50%;
+	height: 50px;
+	font-size: 1.4em;
+	display: block;
+}
+
+footer{
+    background-color: red;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+		text-align: center;
+		font-size: 1.5em;
+		margin-bottom:-1%;
+}
+
+@media only screen and (max-width: 600px){
+	nav a{
+		font-size: 0.8em;
+	}
+	
+	form label{
+		font-size: 1.3em;
+	}
+	
+	#price{
+		font-size: 1.2em;
+	}
+	
+	#submit{
+		font-size: 1em;
+	}
+}

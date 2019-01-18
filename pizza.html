@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pizza Builder</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/pizza.css">
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+			<nav><a href="#">HOME</a> <a href="#">ABOUT</a> <a href="#">CONTACT</a> <a href="#">CART</a></nav>
+			
+			<h1>Silv's Pizzeria</h1>
+			
+			<figure id="pizza_figure">
+					<canvas id="myCanvas" width="301" height="280">
+					Your browser does not support the HTML5 canvas tag.
+					</canvas>
+					<div id="price">Total Price:</div>
+			</figure>
+			
+			<main id="options">
+				<form>
+					<h4> Choose your size: </h4>
+					<label for="small_check"><input id ="small_check"type="radio" name="size" value="small">Small - $6</label>
+					<label for="medium_check"><input id="medium_check" type="radio" name="size" value="peppers">Medium - $8</label>
+					<label for="large_check"><input id="large_check" type="radio" name="size" value="large" checked>Large - $10</label>
+					
+					<h4>Choose Your Toppings:</h4>
+					<h6>*All toppings are 50 cents each*</h6>
+					<label for="pepperonis"><input id ="pepperoni_check"type="checkbox" name="pepperonis" value="pepperonis">Pepperonis</label>
+					<label for="peppers"><input id="green_check" type="checkbox" name="peppers" value="peppers">Green Peppers</label>
+					<label for="mushrooms"><input id="mushroom_check" type="checkbox" name="mushrooms" value="mushrooms">Mushrooms</label>
+					<label for="bacon"><input id="bacon_check" type="checkbox" name="bacon" value="bacon">Bacon Bits</label>
+					
+					<input id="submit" type="submit" value="Submit">
+				</form>
+			</main>		
+			
+			<footer>Silviu Popovici 2019</footer>
+
+	</body>
+
+	<script type="text/javascript" src="scripts/pizza.js"></script>
+</html>
